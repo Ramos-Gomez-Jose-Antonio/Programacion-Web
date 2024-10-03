@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Sencilla</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="calculator">
-        <input type="text" id="display" class="calculator-screen" value="" disabled>
-        <div class="calculator-buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="deleteLast()">DEL</button>
-            <button class="button" onclick="appendToDisplay('/')">/</button>
+<!DOCTYPE html>            <!-- le dice al navegador que el documento está escrito en HTML5 -->
+<html lang="en">           <!-- indica el inicio de un documento HTML y especifica que el idioma principal del contenido es el inglés -->
+<head>                     <!-- contiene metadatos y otras configuraciones sobre el documento web  -->
+    <meta charset="UTF-8">                                                                <!-- usa el conjunto de caracteres UTF-8, que es una codificación estándar que puede representar casi todos los caracteres de todos los idiomas. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                <!-- controla cómo el contenido de la página se ajusta a diferentes tamaños de pantalla, especialmente en dispositivos móviles. -->
+    <title>Calculadora Sencilla</title>                                                   <!-- El título de la página que aparece en la pestaña del navegador. -->
+
+    <link rel="stylesheet" href="style.css">                                              <!-- se utiliza para enlazar un archivo externo de hojas de estilo CSS a un documento HTML. -->
+</head>                                                                                   
+<body>                                                                                    <!-- define el cuerpo del documento, es decir, todo el contenido visible que se muestra en la página web -->
+    <div class="calculator">                                                              <!-- crea un contenedor o "división" en HTML, al cual se le ha asignado una clase llamada "calculator" -->
+        <input type="text" id="display" class="calculator-screen" value="" disabled>      <!-- crea un campo de entrada de texto que se muestra en la pantalla, pero está deshabilitado, es decir, el usuario no puede escribir en él. -->
+        <div class="calculator-buttons">                                                  <!-- crea un contenedor o "división" en HTML, al cual se le ha asignado una clase llamada "calculator-buttons" -->
+            <button class="button" onclick="clearDisplay()">C</button>                    <!-- boton en HTML que al darle click borre los datos-->
+            <button class="button" onclick="deleteLast()">DEL</button>                    <!-- boton en HTML que al darle click borre el ultimo dato -->
+            <button class="button" onclick="appendToDisplay('/')">/</button>              <!-- boton en HTML que al darle click guarde la operacion numerica-->
             <button class="button" onclick="appendToDisplay('*')">*</button>
             
             <button class="button" onclick="appendToDisplay('7')">7</button>
@@ -36,6 +37,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script>                           <!-- se utiliza para enlazar un archivo externo del lenguje de logica JavaScript a un documento HTML -->
 </body>
 </html>
