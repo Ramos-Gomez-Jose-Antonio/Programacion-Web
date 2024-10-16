@@ -78,15 +78,13 @@ const user = {
     activo: true
 
 } 
-nombres(user)
-
-
-
 //consola nombre apellidoP apellidoM
 // alert activo;
 //consola edad
 // alert calle, no, colonia, delegacion
 //consola amigos
+
+nombres(user);
 
     function nombres(user){
         console.log(user.nombre + " " + user.ApellidoP+ " " +user.ApellidoM);
